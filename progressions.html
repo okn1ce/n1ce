@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>n1ce</title>
+
+    <!-- Google Fonts -->
+    	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+ 
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+
+  
+   <link rel="stylesheet" type="text/css" href="progressions.css">
+
+  </head>
+  <body>
+  <!-- Top Bar -->
+      <div class="topBar">
+        <div class="title">
+          <a style="display: inline;" href="main.html">n1ce</a> <p style="display: inline;font-size: 18px;">| Progressions</p>  <p id="Mindfck" style="display: inline;font-size: 18px;"></p>
+        </div>
+      </div>
+    <!-- Content -->
+     <div class="Content">
+      <!-- Description -->
+      <div class="Description">
+        <p class="txtDescription">Progressions</p>
+      </div>
+  <div class="columns">
+    <div class="column col-11">
+      <span class="label label-rounded">🕐 Prochaine minute : <span id="secondesRestante"></span>s restantes.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="60" id="Secondes"></progress>
+</div>
+<div class="column col-11">
+  <span class="label label-rounded " >#️⃣ Prochaine heure : <span id="minRestante"></span>m restantes.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="60" id="Minutes"></progress>
+</div>
+  <div class="column col-11">
+    <span class="label label-rounded">📅 Prochain jour : <span id="heurRestante"></span>h restantes.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="24" id="Heures"></progress>
+</div>
+<div class="column col-11">
+    <span class="label label-rounded">🗓️ Prochaine semaine : <span id="DaysLeft"></span>j restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="7" id="Days"></progress>
+</div>
+<div class="column col-11">
+    <span class="label label-rounded">📆 Prochain mois : <span id="DaysMonthLeft"></span>j restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="31" id="DaysMonth"></progress>
+  </div>
+  <div class="column col-11">
+    <span class="label label-rounded">✨ Prochaine année : <span id="DaysYearLeft"></span>j restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="366" id="DaysYear"></progress>
+  </div>
+  <div class="column col-11">
+    <span class="label label-rounded">🔟 Prochaine décennie : <span id="YearsLeftDecade"></span>y restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="1" id="YearsDecade"></progress>
+  </div>
+  <div class="column col-11">
+  <span class="label label-rounded">🏴‍☠️ Fin de One Piece : <span id="OnePieceLeft"></span>y restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="3" id="OnePieceCurrent"></progress>
+  </div>
+  <div class="column col-11">
+    <span class="label label-rounded">💯 Prochain siècle : <span id="YearsLeftCentury"></span>y restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="100" id="YearsCentury"></progress>
+  </div>
+  <div class="column col-11">
+    <span class="label label-rounded">🌌 Milky Way s'écrase contre Andromeda : <span id="AndroLeft"></span>y restants.</span>
+  <progress class="progress is-large" style="height:10px;" role="progressbar" value="0" max="4000000000" id="Andro"></progress>
+  </div>
+  </div>
+
+
+
+  </body>
+  <script type="text/javascript" src="progressions.js"></script>
+  <script type="text/javascript" src="mindfuckphrases.js"></script>
+</html>
